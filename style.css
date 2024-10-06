@@ -1,0 +1,108 @@
+/* ตั้งค่าพื้นฐานสำหรับหน้าเว็บ */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ส่วนของข้อความต้อนรับ */
+.welcome-message {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* กล่องฟอร์ม */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #ff6600;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+/* การเปลี่ยนสีเมื่อเลื่อนเมาส์ */
+form:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/* ตั้งค่าสำหรับหัวข้อ */
+h1 {
+    color: #ff6600;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* ข้อความอธิบาย */
+p {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ตั้งค่าสำหรับช่องกรอกข้อมูล */
+input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+/* จัดข้อความให้ชิดซ้ายสำหรับ label และ checkbox */
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #333;
+    margin-left: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* เปลี่ยนสีเส้นขอบและเงาเมื่อโฟกัส */
+input[type="text"]:focus, input[type="tel"]:focus {
+    border-color: #ff6600;
+    box-shadow: 0px 0px 5px rgba(255, 102, 0, 0.5);
+    outline: none;
+}
+
+/* ตั้งค่าสำหรับปุ่มส่งฟอร์ม */
+input[type="submit"] {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(255, 102, 0, 0.5);
+}
+
+/* เพิ่มลูกเล่นให้ปุ่มเปลี่ยนสีเมื่อเลื่อนเมาส์ */
+input[type="submit"]:hover {
+    background-color: #cc5200;
+    transform: translateY(-2px);
+}
+
+/* เพิ่มการย่อขนาดเล็กน้อยเมื่อกดปุ่ม */
+input[type="submit"]:active {
+    transform: scale(0.98);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบสั่งอาหารออนไลน์</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <form action="order.php" method="post">
+</head>
+<body>
+    <!-- ส่วนข้อความต้อนรับ -->
+    <div class="welcome-message">
+        <h1>ยินดีต้อนรับสู่ระบบสั่งอาหารออนไลน์</h1>
+        <p>กรุณาเลือกเมนูที่ต้องการสั่ง</p>
+    </div>
+
+    <!-- ส่วนฟอร์มสั่งอาหาร -->
+    <form action="order.php" method="post">
+        <label for="name">ชื่อผู้สั่ง:</label>
+        <input type="text" id="name" name="name" required><br><br>
+    
+        <label for="phone">เบอร์โทรศัพท์:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+    
+        <label for="menu">รายการอาหาร:</label><br>
+        <input type="checkbox" id="somtum" name="menu[]" value="ส้มตำ">
+        <label for="somtum">ส้มตำ</label><br>
+    
+        <input type="checkbox" id="kaiyang" name="menu[]" value="ไก่ย่าง">
+        <label for="kaiyang">ไก่ย่าง</label><br>
+    
+        <input type="checkbox" id="khaoniew" name="menu[]" value="ข้าวเหนียว">
+        <label for="khaoniew">ข้าวเหนียว</label><br><br>
+    
+        <input type="submit" value="ส่งคำสั่งซื้อ">
+    </form>    
+</body>
+</html>
